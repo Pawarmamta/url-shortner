@@ -4,7 +4,7 @@ document.getElementById('input-form').addEventListener('submit', async function(
     const urlToShorten = document.getElementById('hero-input').value;
     
     try {
-        const response = await fetch('http://localhost:5000/shorten', {
+        const response = await fetch('https://url-shortner-kdtf.onrender.com/shorten', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
